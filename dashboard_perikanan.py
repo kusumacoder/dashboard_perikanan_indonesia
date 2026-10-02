@@ -177,7 +177,7 @@ st.markdown("""
 # 3. MEMBACA DATA
 # ============================================================
 # DATA STOK
-file_data = r"Data\stok_dashboard.xlsx"
+file_data = "Data/stok_dashboard.xlsx"
 df = pd.read_excel(file_data)
 # Membersihkan nama kolom
 df.columns = df.columns.str.strip()
@@ -189,7 +189,7 @@ df = df.dropna(subset=["Tahun", "WPP"])
 df["Tahun"] = df["Tahun"].astype(int)
 
 # DATA TANGKAPAN
-file_tangkap = r"Data\tangkapan_dashboard.xlsx"
+file_tangkap = "Data/tangkapan_dashboard.xlsx"
 df_tangkap = pd.read_excel(file_tangkap)
 # Membersihkan nama kolom
 df_tangkap.columns = df_tangkap.columns.str.strip()
@@ -201,7 +201,7 @@ df_tangkap = df_tangkap.dropna(subset=["Tahun","WPP","jenis_tangkapan"])
 df_tangkap["Tahun"] = df_tangkap["Tahun"].astype(int)
 
 # DATA NERACA
-file_neraca = r"Data\neraca_dashboard.xlsx"
+file_neraca = "Data/neraca_dashboard.xlsx"
 df_neraca = pd.read_excel(file_neraca)
 # Membersihkan nama kolom
 df_neraca.columns = df_neraca.columns.str.strip()
