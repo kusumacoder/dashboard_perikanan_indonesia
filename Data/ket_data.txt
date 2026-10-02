@@ -1,0 +1,3 @@
+stok_dashboard = data untuk menyusun bagian (section) STOK
+tangkapan_dashboard = data untuk menyusun bagian (section) TANGKAPAN
+neraca_dashboard = data untuk menyusun bagian (section) NERACA
